@@ -8,7 +8,7 @@ $(document).ready(function(){
 // List of Functions Only
 function scrollAnimation(){//For sticky header Scrolling
     var pagePosition=window.pageYOffset;
-    if(pagePosition>40){
+    if(pagePosition>0){
         if(checkvalue==false){
             $('.main-header').addClass('scrollBackground');//BGcolor =white like
             gsap.fromTo(".main-header", {opacity: 0,y:-50}, {opacity: 1, duration: 1,y:0});

@@ -88,6 +88,10 @@
         max-height: 100%;
         margin-top: 5%;
         margin-right: 1%;
+        overflow-x: hidden;
+    }
+    .picSection img{
+        max-width: 99%;
     }
     .secondLayer{
         margin-top: 30px;

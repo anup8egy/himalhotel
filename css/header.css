@@ -24,13 +24,14 @@ html{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #b7b9b7;
+    color: #efebecf2;
     text-decoration: none;
     cursor: pointer;
     font-family: 'Lato', sans-serif;
     display: inline-block;
     padding: .5em 1.5em;
     max-width: 100%;
+    transition: 0.9s linear;
 }
 .main-nav ul {
     margin: 0;
@@ -61,16 +62,17 @@ html{
     font-size: 36px !important;
     margin-left: 0px !important;
     line-height: 40px !important;
+    transition: 0.1s linear !important;
 }
 .main-nav a:hover .flat:before{ /*To change Flaticons on Hovering*/
-    background: -webkit-linear-gradient(#489c4bb8, #929e92, #31ad3e);
+    background: -webkit-linear-gradient(#9d75cab8, #929e92, #b28bc5);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }                                   /*************/
 
 .main-nav a:hover{                   /*To change text on Hovering*/
-    color: #5da77a  !important;
+    color: #8b8296  !important;
 }                                   /*************/
 h1.logo-2020 {
     height: 100px;
@@ -129,6 +131,9 @@ h1.logo-2020 {
     .textIn {
         font-size: 3.9em;
         font-family: 'Poppins', sans-serif;
+    }
+    .nextprev{
+        margin-left: 30px !important;
     }
 }
 /* Mobile */
