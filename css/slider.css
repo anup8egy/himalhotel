@@ -31,12 +31,13 @@ body{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 .sliderDotsControl{
     height: 50px;
     width: 100vw;
     position: relative;
-    bottom: 150px;
+    bottom: 26vh;
 }
 .dotContainer{
     height: 100%;
@@ -47,15 +48,15 @@ body{
 }
 .dotContainer div{
     height: 5px;
-    width: 5px;
-    border-radius: 100%;
+    width: 15px;
+    border-radius: 25%;
     background:#9c9a9abf;
     margin-left: 5px;
     cursor: pointer;
 }
 .activeDot{
-    height: 8px !important;
-    width: 8px !important;
+    height: 5px !important;
+    width: 15px !important;
     background:white !important;
     margin-bottom: 1px;
     cursor: pointer;

@@ -63,21 +63,27 @@ html{
     line-height: 40px !important;
 }
 .main-nav a:hover .flat:before{ /*To change Flaticons on Hovering*/
-    background: -webkit-linear-gradient(#334653, #1e3446, #273a29);
+    background: -webkit-linear-gradient(#489c4bb8, #929e92, #31ad3e);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }                                   /*************/
 
 .main-nav a:hover{                   /*To change text on Hovering*/
-    color: #302b63  !important;
+    color: #5da77a  !important;
 }                                   /*************/
-h1.logo-2020{/*Visit Nepal 2020 Logo*/
+h1.logo-2020 {
     height: 100px;
     width: 100px;
+    position: relative;
+    margin: 0 190px 0px -10px;
+    bottom: 30px;
 }
 .logo-2020 img {
-    max-width: 130%;
+    max-width: 270px;
+}
+.scrollBackground{
+    background: #2e2d29e0;
 }
 /* ********* */
 @media (min-width:960px) {
@@ -113,9 +119,9 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     .navMob{
         display: none;
     }
-    .slides img{
+    /* .slides img{
         width: 100%;
-    }
+    } */
     
     .stars{
         font-size: 6em;
@@ -130,7 +136,8 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     height: 50px;
     width: 100vw;
     max-height: 100%;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
 }
 .mobNavContainer{
     display: flex;
@@ -149,7 +156,7 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     width: 100%;
     background-color: #000000a8;
     top: 0;
-    z-index: 2;
+    z-index: 0;
     display: none;
 }
 .mobNavList li{
@@ -161,6 +168,8 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     border-bottom: 2px solid white;
     text-align: center;
     font-family: 'Muli', sans-serif;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 .mobNavList a{
     text-decoration: none;
@@ -171,7 +180,7 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
 }
 .mobNavLogo{
@@ -182,7 +191,6 @@ h1.logo-2020{/*Visit Nepal 2020 Logo*/
     z-index: 2;
 }
 .mobNavLogo img{
-    width: 120px;
-    max-height: 100%;
+    max-width: 150px;
     object-fit: cover;
 }

@@ -18,8 +18,10 @@ function slider(counter){
         childs[j].classList.remove('activeDot');
     }
     childs[count].classList.add('activeDot');
+    if(interalContainer){
     clearInterval(interalContainer);
     interalContainer=setInterval(sliderPlus,7000);
+    }
 }
 function sliderPlus(){
     var elements=document.getElementsByClassName('slides');
@@ -41,6 +43,7 @@ function pauseAutoPlay(){//To pause automatic play of slider
     autoCount+=1;
     if(autoCount%2==1){
         clearInterval(interalContainer);
+        interalContainer=false;
         changeIcon(0);
     }else{
         interalContainer=setInterval(sliderPlus,7000);
