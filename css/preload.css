@@ -1,0 +1,17 @@
+.preLoader{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 99;
+    flex-direction: column;
+}
+.preLoader :nth-child(1){
+    max-height: 100px;   
+    background: url('icons/logo_load.png');
+    background-size: cover;
+}
+.preLoader :nth-child(2){
+ max-height: 200px;   
+}
