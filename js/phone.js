@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".log-in").click(function(){return $(".panel_call").animate({width:"toggle"},350),!1})});

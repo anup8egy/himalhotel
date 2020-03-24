@@ -1,18 +1,1 @@
-let c=0;
-$(document).ready(function(){
-    $('.navButt').on('click',showHideMobileNav);
-})
-function showHideMobileNav(){//To open popup for menu bar in mobile
-    c+=1;
-    $('.mobNavList').fadeToggle();
-    if(c%2==1){
-        var check=true;
-        $('.mobNavList').show();
-        gsap.to('.mobNavList',{ duration: 2.5, ease: "expo.in"});
-    }else{
-        var check=false;
-        $('.mobNavList').fadeOut();
-    }
-    $('.navButt i').toggleClass('fa-bars',!check);
-    $('.navButt i').toggleClass('fa-close',check);
-}
+let c=0;function showHideMobileNav(){if(c+=1,$(".mobNavList").fadeToggle(),c%2==1){var a=!0;$(".mobNavList").show(),gsap.to(".mobNavList",{duration:2.5,ease:"expo.in"})}else{a=!1;$(".mobNavList").fadeOut()}$(".navButt i").toggleClass("fa-bars",!a),$(".navButt i").toggleClass("fa-close",a)}$(document).ready(function(){$(".navButt").on("click",showHideMobileNav)});

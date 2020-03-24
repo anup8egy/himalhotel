@@ -1,0 +1,1 @@
+function setOut(){$(".preLoader").fadeOut("3000"),$(".preLoader").hide(),AOS.init(),0==checkFromWHereUserComes&&window.scrollTo({top:0,behavior:"smooth"})}function checkFromWHereUserComes(){var e=document.referrer.split("/");return"posts"==e[4]||"events"==e[4]}window.onload=(()=>{setTimeout(setOut,1e3)});
